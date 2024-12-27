@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Une Lampe Solaire Portable</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div><span>Solar</span>Lite</div>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">À Propos</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section>
-        <div id="Hero">
-            <img src="image/WhatsApp Image 2024-12-23 à 10.19.18_b5c3cf07.jpg" alt="" width="100%">
-            <h2>La lampe solaire qu'il vous faut !</h2>
-            <button type="button" value="">En savoir plus</button>
-        </div>
-        <div id="Fontionnalités">
-            <h2>Pourquoi choisir SolarLite ?</h2>
-            <p>
-                SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans
-                électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de
-                l'environnement.
-            </p>
-            <div>
-                <img src="image/support et panneau.jpg" alt="" width="50%">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SolarLite-Éclairez votre vie, naturellement !</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="En-tete">
+            <img src="image/Logo.png"
+            alt="Image"
+            width="150px"
+            id="logo"
+            />
+            <nav class="Liens">
                 <ul>
-                    <li>Rechargeable grâce au soleil.</li>
-                    <li>Compacte et facile à transporter.</li>
-                    <li>Durée de vie prolongée avec une batterie intégrée.</li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À Propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </div>
-        <div id="contact">
-            <h2>Restez informé !</h2>
-            <form>
-                <label for="name">Nom :</label>
-                <input type="text" required>
-                <label for="email">E-mail :</label>
-                <input type="text" required>
-                <button type="submit">Soumettre</button>
-            </form>
-        </div>
-    </section>
-    <footer>
+            </nav>
+        </header>
+        <section>
+            <div id="Hero">
+                <div id="contenu" class="contenu">
+                    <h2>La lampe solaire qu'il vous faut !</h2>
+                    <p>
+                        <em>
+                            SolarLite est une lampe solaire portable, idéale pour les voyages <br> et les zones sans
+                            électricité. Rechargeable au soleil, elle est compacte, <br> durable et respectueuse de
+                            l'environnement.
+                        </em> 
+                    </p>
+                </div>
+                <button onclick="scrollToFeatures()">En savoir plus</button>
 
-    </footer>
-</body>
+            </div>
+            <div id="features">
+                <h2>Pourquoi choisir SolarLite ?</h2>
+                <ul>
+                    <li><img src="image/panneau-removebg-preview.png" alt="panneau"><h3 class="icon"><em>Rechargeable grâce au soleil.</em></h3></li>
+                    <li><img src="image/torche_avec_panneau-removebg-preview.png" alt="toche et panneau"><h3 class="icon"><em>Compacte et facile à transporter.</em></h3></li>
+                    <li><img src="image/pile solaire.png" alt="batterie"><h3 class="icon"><em>Durée de vie prolongée avec une batterie intégrée.</em></h3></li>
+                </ul>
+            
+            </div>
+            <div id="contact">
+                <h2>Restez informé !</h2>
+                <form id="contact-form">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name">
+                    <label for="email">E-mail :</label>
+                    <input type="text" id="email">
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script src="app.js"></script>
+    </body>
 </html>

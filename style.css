@@ -1,7 +1,123 @@
 body {
-    margin: auto;
-    width: 760px;
-    background-color: #ccc;
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    margin-left: 0;  
+    margin-top: 0; 
+}
+.En-tete {
+    background-color: #ffff;
+    height: 70px;
+}
+#logo {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#4000ff;
+}
+nav ul li:hover {
+    background-color: #e4ece6;
+}
+.Liens {
+    position: relative;
+    float: inline-end;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding: 10px;
+}
+#Hero {
+    background-image: url(image/Logo\ \(2\).png);
+    background-size: cover;
+    height: 60vh;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: #ffffff;
+    padding: 7rem 5%;   
+}
+#features { 
+     padding: 50px 20px; 
+     text-align: center;
+}
+#features h2 {
+     font-size: 28px; 
+     margin-bottom: 20px; 
+} 
+#features ul { list-style: none;
+     margin: 0; 
+     padding: 0; 
+     display: flex; 
+     justify-content: center; 
+} 
+#features ul li { 
+    margin: 20px; 
+    text-align: center; 
+} 
+#features ul li img {
+    width: 50%;
+    height: 110px;
+    margin-bottom: 10px;
+}
+#icon {
+    text-align: center;
+}
+#contact {
+    background: #4040bc;    
+    padding: 35px ; 
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    border-radius: 10px;
+} 
+#contact h2 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+} 
+#contact-form {
+    display: block; 
+} 
+#contact-form label {
+    margin: 10px 0 5px; 
+} 
+#contact-form input { 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    width: 80%; 
+    max-width: 280px;
+    border-radius: 10px;
+}
+button {
+    background-color: #ffcc00; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+button:hover { 
+    background-color: #e4ece6;
+}
+
+#contenu { 
+    font-size: 24px; 
+    font-weight: bold; 
+    position: relative; 
+    animation: moveText 5s 2;
+} 
+@keyframes moveText { 
+    0% { left: 0; } 
+    50% { left: 100px; } 
+    100% { left: 0; }
 }
